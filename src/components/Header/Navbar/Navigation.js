@@ -15,7 +15,9 @@ export default function Navigation() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link>My Booking</Nav.Link>
+                            <Nav.Link as={NavLink} to="/mybooking">
+                                My Booking
+                            </Nav.Link>
                             <Nav.Link>All Booking</Nav.Link>
                         </Nav>
                         <Nav>

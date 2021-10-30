@@ -26,16 +26,17 @@ export default function Login() {
     return (
         <Container>
             <div className="login-section d-flex justify-content-center mt-5 mb-5 ">
-                <div className="w-25 bg-dark p-4 login-style">
+                <div className=" bg-dark p-4 login-style">
                     <h2 className="text-white">
                         Please Login With Your Google Account
                     </h2>
-                    <hr />
+                    <hr className="text-white" />
                     <p>
                         We Are Serious About Your Security.We will never share
                         Your information with other. And We will take care of
                         your google account security{" "}
                     </p>
+                    <br />
                     <Button
                         onClick={handleGoogleSignIn}
                         variant="primary"

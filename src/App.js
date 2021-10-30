@@ -5,6 +5,8 @@ import Navigation from "./components/Header/Navbar/Navigation";
 import Hero from "./components/Header/Topbanner/Hero";
 import Multilingual from "./components/Multilingual/Multilingual";
 import Login from "./components/Pages/Login/Login";
+import Mybooking from "./components/Pages/Mybooking/Mybooking";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Services from "./components/Services/Services";
 import Team from "./components/Team/Team";
 import AuthProvider from "./Context/AuthProvider";
@@ -32,6 +34,11 @@ function App() {
 
                             <Footer></Footer>
                         </Route>
+                        <PrivateRoute path="/mybooking">
+                            <Navigation></Navigation>
+                            <Mybooking></Mybooking>
+                            <Footer></Footer>
+                        </PrivateRoute>
 
                         <Route path="/login">
                             <Navigation></Navigation>
