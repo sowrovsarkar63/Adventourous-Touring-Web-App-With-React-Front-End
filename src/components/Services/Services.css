@@ -1,0 +1,9 @@
+.card-style {
+    min-height: 650px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        90deg,
+        rgb(37, 8, 59) 39%,
+        rgb(20, 55, 72) 100%
+    );
+}

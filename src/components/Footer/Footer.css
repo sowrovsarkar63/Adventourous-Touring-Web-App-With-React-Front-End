@@ -1,0 +1,19 @@
+.footer-area {
+    background-color: rgba(24, 74, 160, 0.904);
+    min-height: 40vh;
+}
+.visit-page ul {
+    list-style-type: none;
+}
+.visit-page ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.visit-page ul li a:hover {
+    color: darkblue;
+}
+.copy-text {
+    background-color: rgb(14, 14, 76);
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
