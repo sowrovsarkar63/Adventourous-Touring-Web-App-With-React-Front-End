@@ -1,0 +1,11 @@
+.img-style img {
+    margin: 10px;
+    padding: 10px;
+    width: 700px;
+    height: 400px;
+}
+
+.guide-text {
+    margin: 15px;
+    padding: 15px;
+}
