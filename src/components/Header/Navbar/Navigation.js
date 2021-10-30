@@ -1,13 +1,13 @@
-import { Container, Nav } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
-const Navbar = () => {
+const Navigation = () => {
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav.Brand href="#home">React-Bootstrap</Nav.Brand>
+                    <Nav.Toggle aria-controls="responsive-navbar-nav" />
+                    <Nav.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="#features">Features</Nav.Link>
                             <Nav.Link href="#pricing">Pricing</Nav.Link>
@@ -18,11 +18,11 @@ const Navbar = () => {
                                 Dank memes
                             </Nav.Link>
                         </Nav>
-                    </Navbar.Collapse>
+                    </Nav.Collapse>
                 </Container>
             </Navbar>
         </>
     );
 };
 
-export default Navbar;
+export default Navigation;

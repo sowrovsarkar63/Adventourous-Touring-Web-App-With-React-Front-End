@@ -1,16 +1,16 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Header/Navbar/Navbar";
+import Navigation from "./components/Header/Navbar/Navigation";
 
 function App() {
     return (
         <BrowserRouter>
             <Switch>
                 <Route exact path="/">
-                    <Navbar></Navbar>
+                    <Navigation></Navigation>
                 </Route>
                 <Route path="/home">
-                    <Navbar></Navbar>
+                    <Navigation></Navigation>
                 </Route>
             </Switch>
         </BrowserRouter>
