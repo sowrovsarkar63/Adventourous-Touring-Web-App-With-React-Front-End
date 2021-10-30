@@ -28,6 +28,7 @@ const useFirebase = () => {
             setuser("");
         });
     };
+
     useEffect(() => {
         onAuthStateChanged(auth, (users) => {
             if (users) {
@@ -35,10 +36,12 @@ const useFirebase = () => {
             }
         });
     }, []);
+
     return {
         users,
         SignInWithGoogle,
         HandleLogout,
+        setuser,
     };
 };
 

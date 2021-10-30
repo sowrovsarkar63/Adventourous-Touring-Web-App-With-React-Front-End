@@ -1,8 +1,10 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 import "./Navbar.css";
 export default function Navigation() {
+    const { users, HandleLogout } = useAuth();
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -17,7 +19,35 @@ export default function Navigation() {
                             <Nav.Link>All Booking</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link>Login</Nav.Link>
+                            {users ? (
+                                <Navbar.Text className="text-white mx-5 mt-1 ">
+                                    <span>
+                                        Signed in as :
+                                        {!users.displayName
+                                            ? users.email
+                                            : users.displayName}
+                                    </span>
+                                </Navbar.Text>
+                            ) : (
+                                ""
+                            )}
+                            {!users ? (
+                                <Nav.Link as={NavLink} to="/login">
+                                    <Button variant="outline-primary">
+                                        Login
+                                    </Button>
+                                </Nav.Link>
+                            ) : (
+                                <Nav.Link
+                                    as={NavLink}
+                                    onClick={HandleLogout}
+                                    to="/login"
+                                >
+                                    <Button variant="outline-danger">
+                                        Logout
+                                    </Button>
+                                </Nav.Link>
+                            )}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
