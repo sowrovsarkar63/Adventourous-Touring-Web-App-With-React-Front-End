@@ -35,7 +35,7 @@ const useFirebase = () => {
             if (users) {
                 setuser(users);
             } else {
-                setuser({});
+                setuser("");
             }
             setisloading(false);
         });
