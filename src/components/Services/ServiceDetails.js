@@ -112,6 +112,7 @@ export default function ServiceDetails() {
                                             })}
                                             placeholder="Add You Current Address Address"
                                         />
+                                        {/* if onclick don't work then try double click */}
                                         <input type="submit" value="Book Now" />
                                     </form>
                                 </div>

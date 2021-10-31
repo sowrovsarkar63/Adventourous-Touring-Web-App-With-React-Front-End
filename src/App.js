@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Header/Navbar/Navigation";
 import Hero from "./components/Header/Topbanner/Hero";
 import Multilingual from "./components/Multilingual/Multilingual";
+import Allbooking from "./components/Pages/Allbooking/Allbooking";
 import Login from "./components/Pages/Login/Login";
 import Mybooking from "./components/Pages/Mybooking/Mybooking";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
@@ -38,6 +39,11 @@ function App() {
                         <PrivateRoute path="/mybooking">
                             <Navigation></Navigation>
                             <Mybooking></Mybooking>
+                            <Footer></Footer>
+                        </PrivateRoute>
+                        <PrivateRoute path="/allbooking">
+                            <Navigation></Navigation>
+                            <Allbooking></Allbooking>
                             <Footer></Footer>
                         </PrivateRoute>
                         <PrivateRoute path="/details/:id">

@@ -18,7 +18,9 @@ export default function Navigation() {
                             <Nav.Link as={NavLink} to="/mybooking">
                                 My Booking
                             </Nav.Link>
-                            <Nav.Link>All Booking</Nav.Link>
+                            <Nav.Link as={NavLink} to="/allbooking">
+                                All Booking
+                            </Nav.Link>
                         </Nav>
                         <Nav>
                             {users ? (
