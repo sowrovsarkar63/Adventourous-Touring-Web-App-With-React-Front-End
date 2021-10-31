@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Adventurous Tour Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visit Live Site [Adventurous Tour](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

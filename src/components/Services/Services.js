@@ -17,10 +17,10 @@ export default function Services() {
 
     return (
         <Container className="mb-4">
-            <div className=" mx-auto w-25  mt-4 pt-4 mb-4 pb-4 border border-warning border-top-0 border-bottom-0">
+            <div className=" mx-auto w-50 mt-4 pt-4 mb-4 pb-4 border border-warning border-top-0 border-bottom-0">
                 <h2 className="text-center">
                     <span className="fw-bolder ">
-                        <span className="text-primary">Book Places</span>
+                        <span className="text-primary">Our Guided Places</span>
                     </span>
                 </h2>
             </div>
