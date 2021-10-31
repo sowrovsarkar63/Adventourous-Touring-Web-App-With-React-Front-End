@@ -21,6 +21,9 @@ export default function Navigation() {
                             <Nav.Link as={NavLink} to="/allbooking">
                                 All Booking
                             </Nav.Link>
+                            <Nav.Link as={NavLink} to="/AddService">
+                                Add Services
+                            </Nav.Link>
                         </Nav>
                         <Nav>
                             {users ? (

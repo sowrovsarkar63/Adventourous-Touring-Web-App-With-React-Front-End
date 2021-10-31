@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
+import AddService from "./components/AddServices/AddService";
 import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Header/Navbar/Navigation";
 import Hero from "./components/Header/Topbanner/Hero";
@@ -44,6 +45,11 @@ function App() {
                         <PrivateRoute path="/allbooking">
                             <Navigation></Navigation>
                             <Allbooking></Allbooking>
+                            <Footer></Footer>
+                        </PrivateRoute>
+                        <PrivateRoute path="/AddService">
+                            <Navigation></Navigation>
+                            <AddService></AddService>
                             <Footer></Footer>
                         </PrivateRoute>
                         <PrivateRoute path="/details/:id">
