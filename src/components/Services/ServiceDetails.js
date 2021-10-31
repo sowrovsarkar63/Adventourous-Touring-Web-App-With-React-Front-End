@@ -35,7 +35,7 @@ export default function ServiceDetails() {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
         axios
-            .post("http://localhost:5000/placeOrder", data)
+            .post("https://adeventure-toure.herokuapp.com/placeOrder", data)
             .then((response) => {
                 if (response.data.insertedId) {
                     alert("Oder Placed Successfully");
