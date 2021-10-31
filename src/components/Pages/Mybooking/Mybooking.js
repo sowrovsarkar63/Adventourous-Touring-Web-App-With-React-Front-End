@@ -9,9 +9,11 @@ export default function Mybooking() {
     const [MyOrders, setMyOrders] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/myorder").then((res) => {
-            setOrders(res.data);
-        });
+        axios
+            .get("https://adeventure-toure.herokuapp.com/myorder")
+            .then((res) => {
+                setOrders(res.data);
+            });
     }, []);
 
     useEffect(() => {
@@ -24,7 +26,7 @@ export default function Mybooking() {
     const handleDeleteOrder = (id) => {
         const proceed = window.confirm("Are you sure, you want to delete?");
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://adeventure-toure.herokuapp.com/orders/${id}`;
             axios.delete(url).then((res) => {
                 if (res.data.deletedCount > 0) {
                     alert("deleted successfully");
