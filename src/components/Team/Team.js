@@ -26,7 +26,7 @@ export default function Team() {
                                 <Card.Title>JUANA HALL</Card.Title>
                                 <Card.Text>
                                     <h6 className="text-dark">
-                                        Personal Trainer
+                                        Personal Guide
                                     </h6>
                                 </Card.Text>
                             </Card.Body>
@@ -42,7 +42,7 @@ export default function Team() {
                                 <Card.Title>DAVID HARRISON </Card.Title>
                                 <Card.Text>
                                     <h6 className="text-dark">
-                                        Personal Trainer
+                                        Hill & Other Guide
                                     </h6>
                                 </Card.Text>
                             </Card.Body>

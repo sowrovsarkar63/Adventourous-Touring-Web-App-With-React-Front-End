@@ -25,14 +25,17 @@ export default function Multilingual() {
                         <h2>MULTILINGUAL GUIDES</h2>
                         <hr />
                         <p className="text-dark">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Cum sunt inventore nam voluptatum perspiciatis
-                            facere. Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Cum sunt inventore nam voluptatum
-                            perspiciatis facere. Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Cum sunt inventore nam
-                            voluptatum perspiciatis facere.
+                            Our multi-lingual accredited guides come from the
+                            very places the participants are visiting, ensuring
+                            a deep local knowledge on the heritage, history and
+                            culture of the region. We like cooperating with
+                            those professional guides that get the extra mile by
+                            showing different new aspects in the cities, such as
+                            local anecdotes, and that are able to include all
+                            points of historical and architectural interest in a
+                            dynamic and enjoyable way.
                         </p>
+
                         {/* div className="mb-2"> */}
                         <Button className="mt-5" variant="danger" size="lg">
                             Learn More

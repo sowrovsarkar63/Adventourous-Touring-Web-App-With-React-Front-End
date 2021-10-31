@@ -42,7 +42,7 @@ export default function Services() {
                                     variant="outline-secondary"
                                     size="lg"
                                 >
-                                    See Details
+                                    Book Place
                                 </Button>
                             </div>
                         </Card>

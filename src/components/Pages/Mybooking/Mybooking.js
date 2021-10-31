@@ -40,12 +40,12 @@ export default function Mybooking() {
     };
 
     return (
-        <Container>
+        <Container className="mb-5">
             <div>
                 <div className=" mx-auto w-25  mt-4 pt-4 mb-4 pb-4 border border-warning border-top-0 border-bottom-0">
                     <h2 className="text-center">
                         <span className="fw-bolder ">
-                            <span className="text-primary">My Orders</span>
+                            <span className="text-primary">My Booking</span>
                         </span>
                     </h2>
                 </div>
