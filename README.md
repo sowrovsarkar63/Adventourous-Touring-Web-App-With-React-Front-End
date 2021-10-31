@@ -17,4 +17,6 @@ Visit Live Site [Adventurous Tour](https://adventurous-tour.web.app/).
 -   User Can See His Booking Place from my booking page
 -   Any Loogedin User Can See All user's booking place from all boking page and they can also delete from booking list
 
--   Logged in user can add new service and it will store in the database.
+-   Logged in user can add new service and it will store in the database.and I will will automatically show to the home page
+
+-   User Can logout

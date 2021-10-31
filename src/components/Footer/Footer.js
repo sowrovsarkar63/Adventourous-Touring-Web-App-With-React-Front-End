@@ -48,6 +48,11 @@ export default function Footer() {
                                         My Booking
                                     </NavLink>
                                 </li>
+                                <li>
+                                    <NavLink to="/AddService">
+                                        Add Services
+                                    </NavLink>
+                                </li>
 
                                 <li>
                                     <NavLink to="/login">Login</NavLink>

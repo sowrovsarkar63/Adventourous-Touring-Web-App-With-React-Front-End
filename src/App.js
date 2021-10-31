@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Header/Navbar/Navigation";
 import Hero from "./components/Header/Topbanner/Hero";
 import Multilingual from "./components/Multilingual/Multilingual";
+import Notfound from "./components/Notfound/Notfound";
 import Allbooking from "./components/Pages/Allbooking/Allbooking";
 import Login from "./components/Pages/Login/Login";
 import Mybooking from "./components/Pages/Mybooking/Mybooking";
@@ -61,6 +62,12 @@ function App() {
                         <Route path="/login">
                             <Navigation></Navigation>
                             <Login></Login>
+                            <Footer></Footer>
+                        </Route>
+
+                        <Route path="*">
+                            <Navigation></Navigation>
+                            <Notfound></Notfound>
                             <Footer></Footer>
                         </Route>
                     </Switch>
