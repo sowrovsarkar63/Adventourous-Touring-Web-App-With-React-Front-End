@@ -39,10 +39,14 @@ export default function Footer() {
                                     <NavLink to="/Home">Home</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/All Order">All Order</NavLink>
+                                    <NavLink to="/allbooking">
+                                        All Booking
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/myorder">My Order</NavLink>
+                                    <NavLink to="/mybooking">
+                                        My Booking
+                                    </NavLink>
                                 </li>
 
                                 <li>

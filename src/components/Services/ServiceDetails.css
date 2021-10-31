@@ -1,0 +1,7 @@
+.PlaceOrder form {
+    display: flex;
+    flex-direction: column;
+}
+.PlaceOrder form input {
+    margin-bottom: 10px;
+}

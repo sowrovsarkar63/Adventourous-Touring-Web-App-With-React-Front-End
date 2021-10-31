@@ -12,11 +12,12 @@ const useFirebase = () => {
     // set user state >>
 
     const [users, setuser] = useState({});
+    const [isloading, setisloading] = useState(true);
 
     firebaseInitialize();
     const auth = getAuth();
     const GoogleProvider = new GoogleAuthProvider();
-
+    GoogleProvider.addScope("email");
     // handle google sign in .
     const SignInWithGoogle = () => {
         return signInWithPopup(auth, GoogleProvider);
@@ -34,8 +35,9 @@ const useFirebase = () => {
             if (users) {
                 setuser(users);
             } else {
-                setuser("");
+                setuser({});
             }
+            setisloading(false);
         });
     }, []);
 
@@ -44,6 +46,7 @@ const useFirebase = () => {
         SignInWithGoogle,
         HandleLogout,
         setuser,
+        isloading,
     };
 };
 
