@@ -33,6 +33,8 @@ const useFirebase = () => {
         onAuthStateChanged(auth, (users) => {
             if (users) {
                 setuser(users);
+            } else {
+                setuser("");
             }
         });
     }, []);
