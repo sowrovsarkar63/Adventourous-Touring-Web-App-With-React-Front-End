@@ -110,7 +110,7 @@ export default function ServiceDetails() {
                                             {...register("address", {
                                                 required: true,
                                             })}
-                                            placeholder="Add Address"
+                                            placeholder="Add You Current Address Address"
                                         />
                                         <input type="submit" value="Book Now" />
                                     </form>
