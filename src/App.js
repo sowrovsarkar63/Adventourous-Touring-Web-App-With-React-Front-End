@@ -7,6 +7,7 @@ import Multilingual from "./components/Multilingual/Multilingual";
 import Login from "./components/Pages/Login/Login";
 import Mybooking from "./components/Pages/Mybooking/Mybooking";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import ServiceDetails from "./components/Services/ServiceDetails";
 import Services from "./components/Services/Services";
 import Team from "./components/Team/Team";
 import AuthProvider from "./Context/AuthProvider";
@@ -37,6 +38,11 @@ function App() {
                         <PrivateRoute path="/mybooking">
                             <Navigation></Navigation>
                             <Mybooking></Mybooking>
+                            <Footer></Footer>
+                        </PrivateRoute>
+                        <PrivateRoute path="/details/:id">
+                            <Navigation></Navigation>
+                            <ServiceDetails></ServiceDetails>
                             <Footer></Footer>
                         </PrivateRoute>
 

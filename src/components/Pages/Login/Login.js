@@ -11,6 +11,7 @@ export default function Login() {
     const handleGoogleSignIn = () => {
         SignInWithGoogle()
             .then((result) => {
+                // setting the user info to the state
                 setuser(result.user);
                 history.push(redirectUri);
 

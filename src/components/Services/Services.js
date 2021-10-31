@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import "./Services.css";
 export default function Services() {
     const [tourPlaces, setTourPlaces] = useState([]);
@@ -27,16 +28,21 @@ export default function Services() {
                 {tourPlaces.map((singlePlace) => (
                     <Col key={singlePlace._id}>
                         <Card className="shadow-lg card-style">
-                            <Card.Img variant="top" src={singlePlace.img} />
+                            <Card.Img variant="top" src={singlePlace?.img} />
                             <Card.Body className="font-monospace text-white">
-                                <Card.Title>{singlePlace.title}</Card.Title>
+                                <Card.Title>{singlePlace?.title}</Card.Title>
                                 <Card.Text className="font-monospace text-white mt-5">
                                     {singlePlace.description.slice(0, 200)}
                                 </Card.Text>
                             </Card.Body>
                             <div className="m-3 p-3 ">
-                                <Button variant="outline-warning" size="lg">
-                                    Book Now
+                                <Button
+                                    as={NavLink}
+                                    to={`/details/${singlePlace?._id}`}
+                                    variant="outline-secondary"
+                                    size="lg"
+                                >
+                                    See Details
                                 </Button>
                             </div>
                         </Card>
