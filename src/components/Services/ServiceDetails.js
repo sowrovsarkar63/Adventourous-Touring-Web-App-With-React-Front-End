@@ -25,7 +25,7 @@ export default function ServiceDetails() {
     // find specific details
     useEffect(() => {
         const FoundService = TourplaceDetail.find(
-            (findService) => findService._id == id
+            (findService) => findService._id === id
         );
         setsingleTourPlace(FoundService);
     }, [TourplaceDetail]);

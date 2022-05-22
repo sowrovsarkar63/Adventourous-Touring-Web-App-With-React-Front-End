@@ -17,8 +17,9 @@ export default function Mybooking() {
     }, []);
 
     useEffect(() => {
+        // users.displayName === order.email || users.email 
         const myorder = Orders.filter(
-            (order) => users.email || users.displayName == order.email
+            (order) =>  order.email === users.email 
         );
         setMyOrders(myorder);
     }, [Orders]);
