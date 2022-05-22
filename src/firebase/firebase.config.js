@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGINSENDER_ID,
-    appId: process.env.REACT_APP_APP_ID,
+  apiKey: "AIzaSyBqA1a801uMYNnpFtMvYmgiUCd8ZmIQHc0",
+  authDomain: "adventurous-tour.firebaseapp.com",
+  projectId: "adventurous-tour",
+  storageBucket: "adventurous-tour.appspot.com",
+  messagingSenderId: "908946279382",
+  appId: "1:908946279382:web:b3070a9f652624bb1bb277"
 };
 export default firebaseConfig;
